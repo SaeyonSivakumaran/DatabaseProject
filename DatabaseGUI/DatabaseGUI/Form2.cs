@@ -29,8 +29,8 @@ namespace DatabaseGUI
         private void AddButton_Click(object sender, EventArgs e)
         {   
             // Display a pop up form for adding a new person
-            Form1 f1 = new Form1();
-            f1.Show();
+            Form1 addForm = new Form1();
+            addForm.Show();
         }
 
         private void RefreshButton_Click(object sender, EventArgs e)
@@ -59,5 +59,6 @@ namespace DatabaseGUI
             //Refresh the data table
             this.infoTableTableAdapter2.Fill(this.peopleDatabaseDataSet2.InfoTable);
         }
+
     }
 }
