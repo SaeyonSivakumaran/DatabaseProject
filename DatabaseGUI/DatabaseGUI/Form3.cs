@@ -29,7 +29,8 @@ namespace DatabaseGUI
             // Making rows visible or invisible depending on whether they should be filtered
             for(int i = 0; i < tableView.RowCount - 1; i++)
             {
-                if(tableView.Rows[i].Cells[3].Value.ToString() == location)
+                string dataLocation = tableView.Rows[i].Cells[3].Value.ToString().Substring(0, 2);
+                if (dataLocation == location)
                 {
                     tableView.Rows[i].Selected = true;
                     tableView.Rows[i].Visible = true;
