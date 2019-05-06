@@ -22,6 +22,8 @@ namespace DatabaseGUI
         {
             // This line of code loads data into the 'peopleDatabaseDataSet2.InfoTable' table. You can move, or remove it, as needed.
             this.infoTableTableAdapter2.Fill(this.peopleDatabaseDataSet2.InfoTable);
+            // Hide the id column in the DataGridView
+            mainInfoTableView.Columns[5].Visible = false;
         }
 
         private void AddButton_Click(object sender, EventArgs e)
@@ -42,7 +44,6 @@ namespace DatabaseGUI
             // Getting the selected person's id
             int row = mainInfoTableView.CurrentCell.RowIndex;
             int selectedId = Int32.Parse(mainInfoTableView.Rows[row].Cells[5].Value.ToString());
-            MessageBox.Show(selectedId.ToString());
 
             // Creating the SQL connection
             string conStr = "Data Source=LAPTOP-L1T7M28M;Initial Catalog=PeopleDatabase;Integrated Security=True";

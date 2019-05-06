@@ -51,6 +51,7 @@
             this.peopleDatabaseDataSet2 = new DatabaseGUI.PeopleDatabaseDataSet2();
             this.infoTableBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
             this.infoTableTableAdapter2 = new DatabaseGUI.PeopleDatabaseDataSet2TableAdapters.InfoTableTableAdapter();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.mainInfoTableView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.peopleDatabaseDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.infoTableBindingSource)).BeginInit();
@@ -108,7 +109,7 @@
             // addButton
             // 
             this.addButton.Font = new System.Drawing.Font("Calibri", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addButton.Location = new System.Drawing.Point(736, 107);
+            this.addButton.Location = new System.Drawing.Point(736, 74);
             this.addButton.Name = "addButton";
             this.addButton.Size = new System.Drawing.Size(248, 86);
             this.addButton.TabIndex = 40;
@@ -119,7 +120,7 @@
             // removeButton
             // 
             this.removeButton.Font = new System.Drawing.Font("Calibri", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.removeButton.Location = new System.Drawing.Point(736, 218);
+            this.removeButton.Location = new System.Drawing.Point(736, 166);
             this.removeButton.Name = "removeButton";
             this.removeButton.Size = new System.Drawing.Size(248, 223);
             this.removeButton.TabIndex = 41;
@@ -130,7 +131,7 @@
             // refreshButton
             // 
             this.refreshButton.Font = new System.Drawing.Font("Calibri", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.refreshButton.Location = new System.Drawing.Point(736, 465);
+            this.refreshButton.Location = new System.Drawing.Point(736, 514);
             this.refreshButton.Name = "refreshButton";
             this.refreshButton.Size = new System.Drawing.Size(248, 86);
             this.refreshButton.TabIndex = 42;
@@ -218,12 +219,23 @@
             // 
             this.infoTableTableAdapter2.ClearBeforeFill = true;
             // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Calibri", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(736, 395);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(248, 113);
+            this.button1.TabIndex = 43;
+            this.button1.Text = "Filter Table";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightBlue;
             this.ClientSize = new System.Drawing.Size(996, 612);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.refreshButton);
             this.Controls.Add(this.removeButton);
             this.Controls.Add(this.addButton);
@@ -270,5 +282,6 @@
         private PeopleDatabaseDataSet2 peopleDatabaseDataSet2;
         private System.Windows.Forms.BindingSource infoTableBindingSource3;
         private PeopleDatabaseDataSet2TableAdapters.InfoTableTableAdapter infoTableTableAdapter2;
+        private System.Windows.Forms.Button button1;
     }
 }
