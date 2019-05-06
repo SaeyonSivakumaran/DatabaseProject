@@ -18,3 +18,4 @@ C:\Users\saeyo\Documents\Visual Studio 2019\DatabaseGUI\DatabaseGUI\obj\Debug\Da
 C:\Users\saeyo\Documents\Visual Studio 2019\DatabaseGUI\DatabaseGUI\obj\Debug\DatabaseGUI.csproj.CoreCompileInputs.cache
 C:\Users\saeyo\Documents\Visual Studio 2019\DatabaseGUI\DatabaseGUI\obj\Debug\DatabaseGUI.exe
 C:\Users\saeyo\Documents\Visual Studio 2019\DatabaseGUI\DatabaseGUI\obj\Debug\DatabaseGUI.pdb
+C:\Users\saeyo\Documents\Visual Studio 2019\DatabaseProject\DatabaseProject\DatabaseGUI\DatabaseGUI\obj\Debug\DatabaseGUI.Form2.resources

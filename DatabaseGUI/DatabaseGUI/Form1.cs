@@ -59,6 +59,7 @@ namespace DatabaseGUI
             } else{
                 MessageBox.Show("No rows affected");
             }
+            this.Hide();
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -67,9 +68,5 @@ namespace DatabaseGUI
             this.infoTableTableAdapter.Fill(this.peopleDatabaseDataSet.InfoTable);
         }
 
-        private void TitleLabel_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

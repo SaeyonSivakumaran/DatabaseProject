@@ -267,11 +267,11 @@
             // 
             this.titleLabel.AutoSize = true;
             this.titleLabel.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.titleLabel.Location = new System.Drawing.Point(17, 46);
+            this.titleLabel.Location = new System.Drawing.Point(114, 48);
             this.titleLabel.Name = "titleLabel";
-            this.titleLabel.Size = new System.Drawing.Size(538, 56);
+            this.titleLabel.Size = new System.Drawing.Size(366, 56);
             this.titleLabel.TabIndex = 38;
-            this.titleLabel.Text = "Database Application";
+            this.titleLabel.Text = "Add New Entry";
             // 
             // Form1
             // 
