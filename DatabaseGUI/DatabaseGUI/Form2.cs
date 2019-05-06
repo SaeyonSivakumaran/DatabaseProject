@@ -60,5 +60,10 @@ namespace DatabaseGUI
             this.infoTableTableAdapter2.Fill(this.peopleDatabaseDataSet2.InfoTable);
         }
 
+        private void FilterButton_Click(object sender, EventArgs e)
+        {
+            Form3 filterForm = new Form3(mainInfoTableView);
+            filterForm.Show();
+        }
     }
 }

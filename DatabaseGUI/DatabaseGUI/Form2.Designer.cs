@@ -30,6 +30,14 @@
         {
             this.components = new System.ComponentModel.Container();
             this.mainInfoTableView = new System.Windows.Forms.DataGridView();
+            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ageDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sexDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.locationDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.schoolDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.infoTableBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+            this.peopleDatabaseDataSet2 = new DatabaseGUI.PeopleDatabaseDataSet2();
             this.titleLabel = new System.Windows.Forms.Label();
             this.peopleDatabaseDataSet = new DatabaseGUI.PeopleDatabaseDataSet();
             this.infoTableBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -37,29 +45,22 @@
             this.addButton = new System.Windows.Forms.Button();
             this.removeButton = new System.Windows.Forms.Button();
             this.refreshButton = new System.Windows.Forms.Button();
-            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.infoTableBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.peopleDatabaseDataSet1 = new DatabaseGUI.PeopleDatabaseDataSet1();
-            this.schoolDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.locationDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sexDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ageDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.infoTableDataSet = new DatabaseGUI.InfoTableDataSet();
             this.infoTableBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.infoTableTableAdapter1 = new DatabaseGUI.InfoTableDataSetTableAdapters.InfoTableTableAdapter();
-            this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.peopleDatabaseDataSet2 = new DatabaseGUI.PeopleDatabaseDataSet2();
-            this.infoTableBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
             this.infoTableTableAdapter2 = new DatabaseGUI.PeopleDatabaseDataSet2TableAdapters.InfoTableTableAdapter();
+            this.filterButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.mainInfoTableView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.infoTableBindingSource3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.peopleDatabaseDataSet2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.peopleDatabaseDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.infoTableBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.infoTableBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.peopleDatabaseDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.infoTableDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.infoTableBindingSource2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.peopleDatabaseDataSet2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.infoTableBindingSource3)).BeginInit();
             this.SuspendLayout();
             // 
             // mainInfoTableView
@@ -80,6 +81,58 @@
             this.mainInfoTableView.RowTemplate.Height = 28;
             this.mainInfoTableView.Size = new System.Drawing.Size(704, 526);
             this.mainInfoTableView.TabIndex = 37;
+            // 
+            // nameDataGridViewTextBoxColumn
+            // 
+            this.nameDataGridViewTextBoxColumn.DataPropertyName = "name";
+            this.nameDataGridViewTextBoxColumn.HeaderText = "name";
+            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
+            this.nameDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // ageDataGridViewTextBoxColumn
+            // 
+            this.ageDataGridViewTextBoxColumn.DataPropertyName = "age";
+            this.ageDataGridViewTextBoxColumn.HeaderText = "age";
+            this.ageDataGridViewTextBoxColumn.Name = "ageDataGridViewTextBoxColumn";
+            this.ageDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // sexDataGridViewTextBoxColumn
+            // 
+            this.sexDataGridViewTextBoxColumn.DataPropertyName = "sex";
+            this.sexDataGridViewTextBoxColumn.HeaderText = "sex";
+            this.sexDataGridViewTextBoxColumn.Name = "sexDataGridViewTextBoxColumn";
+            this.sexDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // locationDataGridViewTextBoxColumn
+            // 
+            this.locationDataGridViewTextBoxColumn.DataPropertyName = "location";
+            this.locationDataGridViewTextBoxColumn.HeaderText = "location";
+            this.locationDataGridViewTextBoxColumn.Name = "locationDataGridViewTextBoxColumn";
+            this.locationDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // schoolDataGridViewTextBoxColumn
+            // 
+            this.schoolDataGridViewTextBoxColumn.DataPropertyName = "school";
+            this.schoolDataGridViewTextBoxColumn.HeaderText = "school";
+            this.schoolDataGridViewTextBoxColumn.Name = "schoolDataGridViewTextBoxColumn";
+            this.schoolDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // id
+            // 
+            this.id.DataPropertyName = "id";
+            this.id.HeaderText = "id";
+            this.id.Name = "id";
+            this.id.ReadOnly = true;
+            // 
+            // infoTableBindingSource3
+            // 
+            this.infoTableBindingSource3.DataMember = "InfoTable";
+            this.infoTableBindingSource3.DataSource = this.peopleDatabaseDataSet2;
+            // 
+            // peopleDatabaseDataSet2
+            // 
+            this.peopleDatabaseDataSet2.DataSetName = "PeopleDatabaseDataSet2";
+            this.peopleDatabaseDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // titleLabel
             // 
@@ -119,7 +172,7 @@
             // removeButton
             // 
             this.removeButton.Font = new System.Drawing.Font("Calibri", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.removeButton.Location = new System.Drawing.Point(736, 230);
+            this.removeButton.Location = new System.Drawing.Point(736, 166);
             this.removeButton.Name = "removeButton";
             this.removeButton.Size = new System.Drawing.Size(248, 223);
             this.removeButton.TabIndex = 41;
@@ -138,13 +191,6 @@
             this.refreshButton.UseVisualStyleBackColor = true;
             this.refreshButton.Click += new System.EventHandler(this.RefreshButton_Click);
             // 
-            // nameDataGridViewTextBoxColumn
-            // 
-            this.nameDataGridViewTextBoxColumn.DataPropertyName = "name";
-            this.nameDataGridViewTextBoxColumn.HeaderText = "name";
-            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
-            this.nameDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
             // infoTableBindingSource1
             // 
             this.infoTableBindingSource1.DataMember = "InfoTable";
@@ -154,34 +200,6 @@
             // 
             this.peopleDatabaseDataSet1.DataSetName = "PeopleDatabaseDataSet1";
             this.peopleDatabaseDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // schoolDataGridViewTextBoxColumn
-            // 
-            this.schoolDataGridViewTextBoxColumn.DataPropertyName = "school";
-            this.schoolDataGridViewTextBoxColumn.HeaderText = "school";
-            this.schoolDataGridViewTextBoxColumn.Name = "schoolDataGridViewTextBoxColumn";
-            this.schoolDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // locationDataGridViewTextBoxColumn
-            // 
-            this.locationDataGridViewTextBoxColumn.DataPropertyName = "location";
-            this.locationDataGridViewTextBoxColumn.HeaderText = "location";
-            this.locationDataGridViewTextBoxColumn.Name = "locationDataGridViewTextBoxColumn";
-            this.locationDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // sexDataGridViewTextBoxColumn
-            // 
-            this.sexDataGridViewTextBoxColumn.DataPropertyName = "sex";
-            this.sexDataGridViewTextBoxColumn.HeaderText = "sex";
-            this.sexDataGridViewTextBoxColumn.Name = "sexDataGridViewTextBoxColumn";
-            this.sexDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // ageDataGridViewTextBoxColumn
-            // 
-            this.ageDataGridViewTextBoxColumn.DataPropertyName = "age";
-            this.ageDataGridViewTextBoxColumn.HeaderText = "age";
-            this.ageDataGridViewTextBoxColumn.Name = "ageDataGridViewTextBoxColumn";
-            this.ageDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // infoTableDataSet
             // 
@@ -197,26 +215,20 @@
             // 
             this.infoTableTableAdapter1.ClearBeforeFill = true;
             // 
-            // id
-            // 
-            this.id.DataPropertyName = "id";
-            this.id.HeaderText = "id";
-            this.id.Name = "id";
-            this.id.ReadOnly = true;
-            // 
-            // peopleDatabaseDataSet2
-            // 
-            this.peopleDatabaseDataSet2.DataSetName = "PeopleDatabaseDataSet2";
-            this.peopleDatabaseDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // infoTableBindingSource3
-            // 
-            this.infoTableBindingSource3.DataMember = "InfoTable";
-            this.infoTableBindingSource3.DataSource = this.peopleDatabaseDataSet2;
-            // 
             // infoTableTableAdapter2
             // 
             this.infoTableTableAdapter2.ClearBeforeFill = true;
+            // 
+            // filterButton
+            // 
+            this.filterButton.Font = new System.Drawing.Font("Calibri", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.filterButton.Location = new System.Drawing.Point(736, 395);
+            this.filterButton.Name = "filterButton";
+            this.filterButton.Size = new System.Drawing.Size(248, 113);
+            this.filterButton.TabIndex = 43;
+            this.filterButton.Text = "Filter Table";
+            this.filterButton.UseVisualStyleBackColor = true;
+            this.filterButton.Click += new System.EventHandler(this.FilterButton_Click);
             // 
             // Form2
             // 
@@ -224,6 +236,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightBlue;
             this.ClientSize = new System.Drawing.Size(996, 612);
+            this.Controls.Add(this.filterButton);
             this.Controls.Add(this.refreshButton);
             this.Controls.Add(this.removeButton);
             this.Controls.Add(this.addButton);
@@ -233,14 +246,14 @@
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.mainInfoTableView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.infoTableBindingSource3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.peopleDatabaseDataSet2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.peopleDatabaseDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.infoTableBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.infoTableBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.peopleDatabaseDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.infoTableDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.infoTableBindingSource2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.peopleDatabaseDataSet2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.infoTableBindingSource3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -270,5 +283,6 @@
         private PeopleDatabaseDataSet2 peopleDatabaseDataSet2;
         private System.Windows.Forms.BindingSource infoTableBindingSource3;
         private PeopleDatabaseDataSet2TableAdapters.InfoTableTableAdapter infoTableTableAdapter2;
+        private System.Windows.Forms.Button filterButton;
     }
 }
