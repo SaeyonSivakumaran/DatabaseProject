@@ -59,13 +59,12 @@ namespace DatabaseGUI
             } else{
                 MessageBox.Show("No rows affected");
             }
+            // Get rid of this window once a person has been added
             this.Hide();
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'peopleDatabaseDataSet.InfoTable' table. You can move, or remove it, as needed.
-            this.infoTableTableAdapter.Fill(this.peopleDatabaseDataSet.InfoTable);
         }
 
     }

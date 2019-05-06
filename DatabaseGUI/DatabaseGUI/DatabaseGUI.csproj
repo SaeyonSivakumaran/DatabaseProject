@@ -58,10 +58,25 @@
     <Compile Include="Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
+    <Compile Include="InfoTableDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InfoTableDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="PeopleDatabaseDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>PeopleDatabaseDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PeopleDatabaseDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PeopleDatabaseDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PeopleDatabaseDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PeopleDatabaseDataSet2.xsd</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -80,6 +95,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="InfoTableDataSet.xsc">
+      <DependentUpon>InfoTableDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="InfoTableDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>InfoTableDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="InfoTableDataSet.xss">
+      <DependentUpon>InfoTableDataSet.xsd</DependentUpon>
+    </None>
     <None Include="PeopleDatabaseDataSet.xsc">
       <DependentUpon>PeopleDatabaseDataSet.xsd</DependentUpon>
     </None>
@@ -90,6 +116,28 @@
     </None>
     <None Include="PeopleDatabaseDataSet.xss">
       <DependentUpon>PeopleDatabaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PeopleDatabaseDataSet1.xsc">
+      <DependentUpon>PeopleDatabaseDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="PeopleDatabaseDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PeopleDatabaseDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PeopleDatabaseDataSet1.xss">
+      <DependentUpon>PeopleDatabaseDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="PeopleDatabaseDataSet2.xsc">
+      <DependentUpon>PeopleDatabaseDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="PeopleDatabaseDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PeopleDatabaseDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PeopleDatabaseDataSet2.xss">
+      <DependentUpon>PeopleDatabaseDataSet2.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

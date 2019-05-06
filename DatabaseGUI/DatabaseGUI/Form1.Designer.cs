@@ -41,26 +41,21 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.infoTableView = new System.Windows.Forms.DataGridView();
-            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ageDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sexDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.locationDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.schoolDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.infoTableBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.peopleDatabaseDataSet = new DatabaseGUI.PeopleDatabaseDataSet();
             this.infoTableTableAdapter = new DatabaseGUI.PeopleDatabaseDataSetTableAdapters.InfoTableTableAdapter();
             this.titleLabel = new System.Windows.Forms.Label();
+            this.infoTableBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.ageBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.infoTableView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.infoTableBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.peopleDatabaseDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.infoTableBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // submitButton
             // 
             this.submitButton.Font = new System.Drawing.Font("Calibri", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.submitButton.Location = new System.Drawing.Point(57, 452);
+            this.submitButton.Location = new System.Drawing.Point(60, 424);
             this.submitButton.Name = "submitButton";
             this.submitButton.Size = new System.Drawing.Size(468, 66);
             this.submitButton.TabIndex = 12;
@@ -71,7 +66,7 @@
             // nameBox
             // 
             this.nameBox.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nameBox.Location = new System.Drawing.Point(216, 166);
+            this.nameBox.Location = new System.Drawing.Point(219, 138);
             this.nameBox.Name = "nameBox";
             this.nameBox.Size = new System.Drawing.Size(339, 42);
             this.nameBox.TabIndex = 34;
@@ -79,7 +74,7 @@
             // ageBox
             // 
             this.ageBox.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ageBox.Location = new System.Drawing.Point(216, 220);
+            this.ageBox.Location = new System.Drawing.Point(219, 192);
             this.ageBox.Name = "ageBox";
             this.ageBox.Size = new System.Drawing.Size(120, 42);
             this.ageBox.TabIndex = 32;
@@ -104,7 +99,7 @@
             "NT - Northwest Territories",
             "NU - Nunavut",
             "YT - Yukon "});
-            this.provinceOptions.Location = new System.Drawing.Point(216, 321);
+            this.provinceOptions.Location = new System.Drawing.Point(219, 293);
             this.provinceOptions.Name = "provinceOptions";
             this.provinceOptions.Size = new System.Drawing.Size(339, 43);
             this.provinceOptions.TabIndex = 31;
@@ -113,7 +108,7 @@
             // 
             this.femaleRadio.AutoSize = true;
             this.femaleRadio.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.femaleRadio.Location = new System.Drawing.Point(358, 275);
+            this.femaleRadio.Location = new System.Drawing.Point(361, 247);
             this.femaleRadio.Name = "femaleRadio";
             this.femaleRadio.Size = new System.Drawing.Size(122, 39);
             this.femaleRadio.TabIndex = 30;
@@ -125,7 +120,7 @@
             // 
             this.maleRadio.AutoSize = true;
             this.maleRadio.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maleRadio.Location = new System.Drawing.Point(216, 275);
+            this.maleRadio.Location = new System.Drawing.Point(219, 247);
             this.maleRadio.Name = "maleRadio";
             this.maleRadio.Size = new System.Drawing.Size(97, 39);
             this.maleRadio.TabIndex = 29;
@@ -136,7 +131,7 @@
             // schoolBox
             // 
             this.schoolBox.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.schoolBox.Location = new System.Drawing.Point(216, 375);
+            this.schoolBox.Location = new System.Drawing.Point(219, 347);
             this.schoolBox.Name = "schoolBox";
             this.schoolBox.Size = new System.Drawing.Size(339, 42);
             this.schoolBox.TabIndex = 28;
@@ -145,7 +140,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Calibri", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(13, 368);
+            this.label7.Location = new System.Drawing.Point(16, 340);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(163, 54);
             this.label7.TabIndex = 27;
@@ -156,7 +151,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Calibri", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(13, 314);
+            this.label6.Location = new System.Drawing.Point(16, 286);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(189, 54);
             this.label6.TabIndex = 26;
@@ -167,7 +162,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Calibri", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(13, 262);
+            this.label5.Location = new System.Drawing.Point(16, 234);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(105, 54);
             this.label5.TabIndex = 25;
@@ -178,7 +173,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Calibri", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(13, 208);
+            this.label4.Location = new System.Drawing.Point(16, 180);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(103, 54);
             this.label4.TabIndex = 24;
@@ -189,65 +184,12 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Calibri", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(13, 154);
+            this.label3.Location = new System.Drawing.Point(16, 126);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(141, 54);
             this.label3.TabIndex = 23;
             this.label3.Text = "Name:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.BottomRight;
-            // 
-            // infoTableView
-            // 
-            this.infoTableView.AutoGenerateColumns = false;
-            this.infoTableView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.infoTableView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.nameDataGridViewTextBoxColumn,
-            this.ageDataGridViewTextBoxColumn,
-            this.sexDataGridViewTextBoxColumn,
-            this.locationDataGridViewTextBoxColumn,
-            this.schoolDataGridViewTextBoxColumn});
-            this.infoTableView.DataSource = this.infoTableBindingSource;
-            this.infoTableView.Location = new System.Drawing.Point(583, 22);
-            this.infoTableView.Name = "infoTableView";
-            this.infoTableView.ReadOnly = true;
-            this.infoTableView.RowTemplate.Height = 28;
-            this.infoTableView.Size = new System.Drawing.Size(614, 535);
-            this.infoTableView.TabIndex = 36;
-            // 
-            // nameDataGridViewTextBoxColumn
-            // 
-            this.nameDataGridViewTextBoxColumn.DataPropertyName = "name";
-            this.nameDataGridViewTextBoxColumn.HeaderText = "name";
-            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
-            this.nameDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // ageDataGridViewTextBoxColumn
-            // 
-            this.ageDataGridViewTextBoxColumn.DataPropertyName = "age";
-            this.ageDataGridViewTextBoxColumn.HeaderText = "age";
-            this.ageDataGridViewTextBoxColumn.Name = "ageDataGridViewTextBoxColumn";
-            this.ageDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // sexDataGridViewTextBoxColumn
-            // 
-            this.sexDataGridViewTextBoxColumn.DataPropertyName = "sex";
-            this.sexDataGridViewTextBoxColumn.HeaderText = "sex";
-            this.sexDataGridViewTextBoxColumn.Name = "sexDataGridViewTextBoxColumn";
-            this.sexDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // locationDataGridViewTextBoxColumn
-            // 
-            this.locationDataGridViewTextBoxColumn.DataPropertyName = "location";
-            this.locationDataGridViewTextBoxColumn.HeaderText = "location";
-            this.locationDataGridViewTextBoxColumn.Name = "locationDataGridViewTextBoxColumn";
-            this.locationDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // schoolDataGridViewTextBoxColumn
-            // 
-            this.schoolDataGridViewTextBoxColumn.DataPropertyName = "school";
-            this.schoolDataGridViewTextBoxColumn.HeaderText = "school";
-            this.schoolDataGridViewTextBoxColumn.Name = "schoolDataGridViewTextBoxColumn";
-            this.schoolDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // infoTableBindingSource
             // 
@@ -273,15 +215,19 @@
             this.titleLabel.TabIndex = 38;
             this.titleLabel.Text = "Add New Entry";
             // 
+            // infoTableBindingSource1
+            // 
+            this.infoTableBindingSource1.DataMember = "InfoTable";
+            this.infoTableBindingSource1.DataSource = this.peopleDatabaseDataSet;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.LightBlue;
-            this.ClientSize = new System.Drawing.Size(1209, 569);
+            this.ClientSize = new System.Drawing.Size(570, 498);
             this.Controls.Add(this.titleLabel);
-            this.Controls.Add(this.infoTableView);
             this.Controls.Add(this.nameBox);
             this.Controls.Add(this.ageBox);
             this.Controls.Add(this.provinceOptions);
@@ -299,9 +245,9 @@
             this.Text = "Database Application";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ageBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.infoTableView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.infoTableBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.peopleDatabaseDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.infoTableBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -320,16 +266,11 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.DataGridView infoTableView;
         private PeopleDatabaseDataSet peopleDatabaseDataSet;
         private System.Windows.Forms.BindingSource infoTableBindingSource;
         private PeopleDatabaseDataSetTableAdapters.InfoTableTableAdapter infoTableTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ageDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn sexDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn locationDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn schoolDataGridViewTextBoxColumn;
         private System.Windows.Forms.Label titleLabel;
+        private System.Windows.Forms.BindingSource infoTableBindingSource1;
     }
 }
 

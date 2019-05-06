@@ -34,17 +34,32 @@
             this.peopleDatabaseDataSet = new DatabaseGUI.PeopleDatabaseDataSet();
             this.infoTableBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.infoTableTableAdapter = new DatabaseGUI.PeopleDatabaseDataSetTableAdapters.InfoTableTableAdapter();
-            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ageDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sexDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.locationDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.schoolDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.addButton = new System.Windows.Forms.Button();
             this.removeButton = new System.Windows.Forms.Button();
             this.refreshButton = new System.Windows.Forms.Button();
+            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.infoTableBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.peopleDatabaseDataSet1 = new DatabaseGUI.PeopleDatabaseDataSet1();
+            this.schoolDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.locationDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sexDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ageDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.infoTableDataSet = new DatabaseGUI.InfoTableDataSet();
+            this.infoTableBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.infoTableTableAdapter1 = new DatabaseGUI.InfoTableDataSetTableAdapters.InfoTableTableAdapter();
+            this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.peopleDatabaseDataSet2 = new DatabaseGUI.PeopleDatabaseDataSet2();
+            this.infoTableBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+            this.infoTableTableAdapter2 = new DatabaseGUI.PeopleDatabaseDataSet2TableAdapters.InfoTableTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.mainInfoTableView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.peopleDatabaseDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.infoTableBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.infoTableBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.peopleDatabaseDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.infoTableDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.infoTableBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.peopleDatabaseDataSet2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.infoTableBindingSource3)).BeginInit();
             this.SuspendLayout();
             // 
             // mainInfoTableView
@@ -56,8 +71,9 @@
             this.ageDataGridViewTextBoxColumn,
             this.sexDataGridViewTextBoxColumn,
             this.locationDataGridViewTextBoxColumn,
-            this.schoolDataGridViewTextBoxColumn});
-            this.mainInfoTableView.DataSource = this.infoTableBindingSource;
+            this.schoolDataGridViewTextBoxColumn,
+            this.id});
+            this.mainInfoTableView.DataSource = this.infoTableBindingSource3;
             this.mainInfoTableView.Location = new System.Drawing.Point(12, 74);
             this.mainInfoTableView.Name = "mainInfoTableView";
             this.mainInfoTableView.ReadOnly = true;
@@ -89,41 +105,6 @@
             // 
             this.infoTableTableAdapter.ClearBeforeFill = true;
             // 
-            // nameDataGridViewTextBoxColumn
-            // 
-            this.nameDataGridViewTextBoxColumn.DataPropertyName = "name";
-            this.nameDataGridViewTextBoxColumn.HeaderText = "name";
-            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
-            this.nameDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // ageDataGridViewTextBoxColumn
-            // 
-            this.ageDataGridViewTextBoxColumn.DataPropertyName = "age";
-            this.ageDataGridViewTextBoxColumn.HeaderText = "age";
-            this.ageDataGridViewTextBoxColumn.Name = "ageDataGridViewTextBoxColumn";
-            this.ageDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // sexDataGridViewTextBoxColumn
-            // 
-            this.sexDataGridViewTextBoxColumn.DataPropertyName = "sex";
-            this.sexDataGridViewTextBoxColumn.HeaderText = "sex";
-            this.sexDataGridViewTextBoxColumn.Name = "sexDataGridViewTextBoxColumn";
-            this.sexDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // locationDataGridViewTextBoxColumn
-            // 
-            this.locationDataGridViewTextBoxColumn.DataPropertyName = "location";
-            this.locationDataGridViewTextBoxColumn.HeaderText = "location";
-            this.locationDataGridViewTextBoxColumn.Name = "locationDataGridViewTextBoxColumn";
-            this.locationDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // schoolDataGridViewTextBoxColumn
-            // 
-            this.schoolDataGridViewTextBoxColumn.DataPropertyName = "school";
-            this.schoolDataGridViewTextBoxColumn.HeaderText = "school";
-            this.schoolDataGridViewTextBoxColumn.Name = "schoolDataGridViewTextBoxColumn";
-            this.schoolDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
             // addButton
             // 
             this.addButton.Font = new System.Drawing.Font("Calibri", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -144,6 +125,7 @@
             this.removeButton.TabIndex = 41;
             this.removeButton.Text = "Remove Selected Entry";
             this.removeButton.UseVisualStyleBackColor = true;
+            this.removeButton.Click += new System.EventHandler(this.RemoveButton_Click);
             // 
             // refreshButton
             // 
@@ -155,6 +137,86 @@
             this.refreshButton.Text = "Refresh";
             this.refreshButton.UseVisualStyleBackColor = true;
             this.refreshButton.Click += new System.EventHandler(this.RefreshButton_Click);
+            // 
+            // nameDataGridViewTextBoxColumn
+            // 
+            this.nameDataGridViewTextBoxColumn.DataPropertyName = "name";
+            this.nameDataGridViewTextBoxColumn.HeaderText = "name";
+            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
+            this.nameDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // infoTableBindingSource1
+            // 
+            this.infoTableBindingSource1.DataMember = "InfoTable";
+            this.infoTableBindingSource1.DataSource = this.peopleDatabaseDataSet;
+            // 
+            // peopleDatabaseDataSet1
+            // 
+            this.peopleDatabaseDataSet1.DataSetName = "PeopleDatabaseDataSet1";
+            this.peopleDatabaseDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // schoolDataGridViewTextBoxColumn
+            // 
+            this.schoolDataGridViewTextBoxColumn.DataPropertyName = "school";
+            this.schoolDataGridViewTextBoxColumn.HeaderText = "school";
+            this.schoolDataGridViewTextBoxColumn.Name = "schoolDataGridViewTextBoxColumn";
+            this.schoolDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // locationDataGridViewTextBoxColumn
+            // 
+            this.locationDataGridViewTextBoxColumn.DataPropertyName = "location";
+            this.locationDataGridViewTextBoxColumn.HeaderText = "location";
+            this.locationDataGridViewTextBoxColumn.Name = "locationDataGridViewTextBoxColumn";
+            this.locationDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // sexDataGridViewTextBoxColumn
+            // 
+            this.sexDataGridViewTextBoxColumn.DataPropertyName = "sex";
+            this.sexDataGridViewTextBoxColumn.HeaderText = "sex";
+            this.sexDataGridViewTextBoxColumn.Name = "sexDataGridViewTextBoxColumn";
+            this.sexDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // ageDataGridViewTextBoxColumn
+            // 
+            this.ageDataGridViewTextBoxColumn.DataPropertyName = "age";
+            this.ageDataGridViewTextBoxColumn.HeaderText = "age";
+            this.ageDataGridViewTextBoxColumn.Name = "ageDataGridViewTextBoxColumn";
+            this.ageDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // infoTableDataSet
+            // 
+            this.infoTableDataSet.DataSetName = "InfoTableDataSet";
+            this.infoTableDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // infoTableBindingSource2
+            // 
+            this.infoTableBindingSource2.DataMember = "InfoTable";
+            this.infoTableBindingSource2.DataSource = this.infoTableDataSet;
+            // 
+            // infoTableTableAdapter1
+            // 
+            this.infoTableTableAdapter1.ClearBeforeFill = true;
+            // 
+            // id
+            // 
+            this.id.DataPropertyName = "id";
+            this.id.HeaderText = "id";
+            this.id.Name = "id";
+            this.id.ReadOnly = true;
+            // 
+            // peopleDatabaseDataSet2
+            // 
+            this.peopleDatabaseDataSet2.DataSetName = "PeopleDatabaseDataSet2";
+            this.peopleDatabaseDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // infoTableBindingSource3
+            // 
+            this.infoTableBindingSource3.DataMember = "InfoTable";
+            this.infoTableBindingSource3.DataSource = this.peopleDatabaseDataSet2;
+            // 
+            // infoTableTableAdapter2
+            // 
+            this.infoTableTableAdapter2.ClearBeforeFill = true;
             // 
             // Form2
             // 
@@ -173,6 +235,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.mainInfoTableView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.peopleDatabaseDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.infoTableBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.infoTableBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.peopleDatabaseDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.infoTableDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.infoTableBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.peopleDatabaseDataSet2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.infoTableBindingSource3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -185,13 +253,22 @@
         private PeopleDatabaseDataSet peopleDatabaseDataSet;
         private System.Windows.Forms.BindingSource infoTableBindingSource;
         private PeopleDatabaseDataSetTableAdapters.InfoTableTableAdapter infoTableTableAdapter;
+        private System.Windows.Forms.Button addButton;
+        private System.Windows.Forms.Button removeButton;
+        private System.Windows.Forms.Button refreshButton;
         private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingSource infoTableBindingSource1;
+        private PeopleDatabaseDataSet1 peopleDatabaseDataSet1;
         private System.Windows.Forms.DataGridViewTextBoxColumn ageDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn sexDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn locationDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn schoolDataGridViewTextBoxColumn;
-        private System.Windows.Forms.Button addButton;
-        private System.Windows.Forms.Button removeButton;
-        private System.Windows.Forms.Button refreshButton;
+        private InfoTableDataSet infoTableDataSet;
+        private System.Windows.Forms.BindingSource infoTableBindingSource2;
+        private InfoTableDataSetTableAdapters.InfoTableTableAdapter infoTableTableAdapter1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn id;
+        private PeopleDatabaseDataSet2 peopleDatabaseDataSet2;
+        private System.Windows.Forms.BindingSource infoTableBindingSource3;
+        private PeopleDatabaseDataSet2TableAdapters.InfoTableTableAdapter infoTableTableAdapter2;
     }
 }
