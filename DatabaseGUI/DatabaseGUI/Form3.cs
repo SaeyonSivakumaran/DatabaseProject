@@ -29,7 +29,10 @@ namespace DatabaseGUI
             // Making rows visible or invisible depending on whether they should be filtered
             for(int i = 0; i < tableView.RowCount - 1; i++)
             {
+                // Adjusting length of location to match the filter input
                 string dataLocation = tableView.Rows[i].Cells[3].Value.ToString().Substring(0, 2);
+                
+                // Checking if the filter input and location are the same
                 if (dataLocation == location)
                 {
                     tableView.Rows[i].Selected = true;
